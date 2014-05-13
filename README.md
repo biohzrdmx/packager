@@ -50,6 +50,6 @@ _IMPORTANT: Once you've finished with your deployment, you should delete the `pa
 
 You may find that this doesn't work on your &lt;insert cheap web hosting provider name here&gt;-hosted server, and that's because it doesn't has the PHP Zip extension.
 
-As a workaround, you may use the [PclZip library](http://www.phpconcept.net/pclzip/) (for unpacking only).
+As a workaround, you may use the [PclZip library](http://www.phpconcept.net/pclzip/) (for unpacking only). Just upload `pclzip.lib.php` and place it in the same folder as `packager-unzip.php`.
 
 Also, you may notice that on some hosting services (looking at you, Rackspace) the script runs out of time and dies. This is because they have a ridiculously short execution time, if you can increment it to say, a couple minutes, do so before trying to pack/unpack large sites.
